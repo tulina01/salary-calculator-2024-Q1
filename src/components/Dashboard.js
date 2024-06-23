@@ -7,8 +7,6 @@ const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
 
-  // const tasksPerPage = 8;
-
   const taskPriorities = (data) => {
     return data.map((t) => t.priority);
   };
@@ -35,9 +33,6 @@ const Dashboard = () => {
       )
     );
   };
-
-  // const offset = currentPage * tasksPerPage;
-  // const currentTasks = tasks.slice(offset, offset + tasksPerPage);
 
   const priorities = {
     HIGH: "red",
