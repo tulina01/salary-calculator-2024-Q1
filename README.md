@@ -1,3 +1,22 @@
+
+
+1. Clone the Git repository to your local machine:
+   
+   git clone <repository-url>
+   
+2. Navigate to the project directory:
+   
+   cd <project-directory>
+   
+3. Install the project dependencies:
+   
+   npm install
+   
+4. Start the development server:
+   
+   npm start
+   
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
