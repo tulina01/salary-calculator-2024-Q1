@@ -5,7 +5,6 @@ import PrioritiesPieChart from "./PrioritiesPieChart";
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
-  const [currentPage, setCurrentPage] = useState(0);
 
   const taskPriorities = (data) => {
     return data.map((t) => t.priority);
@@ -21,10 +20,6 @@ const Dashboard = () => {
       })
       .catch((error) => console.error("Error fetching tasks:", error));
   }, []);
-
-  const handlePageClick = (data) => {
-    setCurrentPage(data.selected);
-  };
 
   const handleMarkAsDone = (id) => {
     setTasks(
